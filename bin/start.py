@@ -2,9 +2,9 @@ from ppadb.client import Client as AdbClient
 import os, subprocess
 sdk_path = r"C:\Users\omara\AppData\Local\Android\Sdk\emulator;"
 
-# def initialize_emulator(emupath):
-#     os.system(f'cd {emupath} ')
-#     os.system(r'emulator -avd Pixel_5_API_27')
+def initialize_emulator(emupath):
+    os.system(f'cd {emupath} ')
+    os.system(r'emulator -avd Pixel_5_API_27')
 #     print(os.getenv('Path'))
 #     subprocess.Popen(['emulator', '-avd', 'Pixel_5_API_27'],  shell=True,env={'Path': sdk_path+os.getenv('PATH')})
 
@@ -23,6 +23,7 @@ print("""
      :   \ |  `----'  |  ,   /|  ,   /      
       '---"            ---`-'  ---`-'         
 """)
+
 print('Starting Volt!\n')
 print('Initializing emulator: Pixel_5_API_27!\n')
 # print(sdk_path)
